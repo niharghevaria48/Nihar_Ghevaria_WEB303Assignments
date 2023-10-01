@@ -27,7 +27,7 @@ function second(){
         url:"team.json",
         dataType :"Json",
         
-        beforeSend : function delay(){
+        beforeSend : function(){
             $("#team").append("<strong>"+"Loading..."+"</strong>");           
         },
         error : function(){
