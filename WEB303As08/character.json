@@ -1,0 +1,51 @@
+[
+    {
+        "firstName": "Jack",
+        "lastName": "Sparrow",
+        "gender": "Male",
+        "role": "Captain",
+        "realname": "Johnny Depp"
+    },
+    {
+        "firstName": " Hector ",
+        "lastName": "Barbossa",
+        "gender": "Female",
+        "role": "Captain",
+        "realname": "Geoffrey Rush "
+    },
+    {
+        "firstName": "Davy",
+        "lastName": "Jones",
+        "gender": "Male",
+        "role": "Squid",
+        "realname": "Bill Nighy"
+    },
+    {
+        "firstName": "Elizabeth",
+        "lastName": "Turner ",
+        "gender": "Female",
+        "role": "pirate",
+        "realname": "Keira Knightley"
+    },
+    {
+        "firstName": "William ",
+        "lastName": "Turner ",
+        "gender": "Male",
+        "role": "sailer",
+        "realname": "Orlando Bloom."
+    },
+    {
+        "firstName": "Joshamee ",
+        "lastName": "Gibbs ",
+        "gender": "Male",
+        "role": "Sailer",
+        "realname": "Kevin R. McNally."
+    },
+    {
+        "firstName": "Sao ",
+        "lastName": "Feng ",
+        "gender": "Male",
+        "role": "captain",
+        "realname": "Chow Yun-fat"
+    }
+]
