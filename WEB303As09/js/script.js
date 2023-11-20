@@ -9,12 +9,12 @@ $('table').addClass('sortable');
 let $headingRow = $('<tr/>');
 
 $('thead').append($headingRow);
-$headingRow.append($('<th/>').html('<a data-sort="name">First Name</a>'));
-$headingRow.append($('<th/>').html('<a data-sort="name">Last Name</a>'));
-$headingRow.append($('<th/>').html('<a data-sort="name">Gender</a>'));
-$headingRow.append($('<th/>').html('<a data-sort="name">Role</a>'));
-$headingRow.append($('<th/>').html('<a data-sort="name"> Real Name</a>')); 
-$headingRow.append($('<th/>').html('<a data-sort="date">Date of Birth</a>'));
+$headingRow.append($('<th/>').html('<a data-sort="name">First Name<span></span></a>'));
+$headingRow.append($('<th/>').html('<a data-sort="name">Last Name<span></span></a>'));
+$headingRow.append($('<th/>').html('<a data-sort="name">Gender<span></span></a>'));
+$headingRow.append($('<th/>').html('<a data-sort="name">Role<span></span></a>'));
+$headingRow.append($('<th/>').html('<a data-sort="name"> Real Name<span></span></a>')); 
+$headingRow.append($('<th/>').html('<a data-sort="date">Date of Birth<span></span></a>'));
 
 
 
@@ -82,32 +82,37 @@ $.ajax({
             $controls.on('click',function(){
                 var $header = $(this);
                 var order = $header.data('sort');
+                var $span = $header.find('span');
                 var column;
               
                 //If selected item has ascending or descending class, reverse contents
                 if ($header.is('.ascending')){
                     
                     $header.toggleClass('ascending no-sort');
+                    $span.html(' &#x25BC;');
                     $header.addClass('ascending');
                     $header.toggleClass('ascending descending');
                    
                     $tbody.append(rows.reverse());
-                    $header.html($header.text() + ' &#x25B2;');
+                    
                     
         
                 } else if($header.is('.descending')){
+                    $span.html('');
                     $header.removeClass('descending ascending');
                     $header.toggleClass('no-sort');
 
                     $tbody.append(deepCopy);
-                    $header.html($header.text() + ' &#x25BC;');
+                    
                 }
                 else {
                     $header.addClass('ascending');
                     $header.removeClass('no-sort');
+                    $span.html(' &#x25B2;');
                     $header.html($header.text() + "<span id='sort'></span>");
                     //Remove asc or desc from all other headers
                     $header.siblings().removeClass('ascending descending no sort');
+                    
                     
                     if (compare.hasOwnProperty(order)){
                         column = $controls.index(this);
