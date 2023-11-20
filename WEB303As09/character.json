@@ -1,0 +1,58 @@
+[
+    {
+        "firstName": "Jack",
+        "lastName": "Sparrow",
+        "gender": "Male",
+        "role": "Captain",
+        "realname": "Johnny Depp",
+        "dob": "1963-06-09"
+    },
+    {
+        "firstName": " Hector ",
+        "lastName": "Barbossa",
+        "gender": "Female",
+        "role": "Captain",
+        "realname": "Geoffrey Rush ",
+        "dob":"1951-07-06"
+    },
+    {
+        "firstName": "Davy",
+        "lastName": "Jones",
+        "gender": "Male",
+        "role": "Squid",
+        "realname": "Bill Nighy",
+        "dob":"1949-12-12"
+    },
+    {
+        "firstName": "Elizabeth",
+        "lastName": "Turner ",
+        "gender": "Female",
+        "role": "pirate",
+        "realname": "Keira Knightley",
+        "dob":"1985-03-26"
+    },
+    {
+        "firstName": "William ",
+        "lastName": "Turner ",
+        "gender": "Male",
+        "role": "sailer",
+        "realname": "Orlando Bloom.",
+        "dob":"1956-04-26"
+    },
+    {
+        "firstName": "Joshamee ",
+        "lastName": "Gibbs ",
+        "gender": "Male",
+        "role": "Sailer",
+        "realname": "Kevin R. McNally.",
+        "dob":"1977-01-13"
+    },
+    {
+        "firstName": "Sao ",
+        "lastName": "Feng ",
+        "gender": "Male",
+        "role": "captain",
+        "realname": "Chow Yun-fat",
+        "dob":"1955-04-18"
+    }
+]
